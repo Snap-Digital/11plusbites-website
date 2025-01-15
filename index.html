@@ -1,50 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fun with Stories</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Fun with Stories</h1>
-    <p>Making learning fun and engaging through stories!</p>
-  </header>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center;    /* Centers content vertically */
+  height: 100vh;          /* Full viewport height */
+  text-align: center;     /* Centers text within elements */
+}
 
-  <main>
-    <section id="apps">
-      <h2>Apps for Learning</h2>
-      <ul>
-        <li><a href="#">Learn Vocabulary</a></li>
-        <li><a href="#">Master Maths</a></li>
-        <li><a href="#">Explore Science Concepts</a></li>
-      </ul>
-    </section>
+header {
+  background-color: #ffcccb;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+}
 
-    <section id="why-stories">
-      <h2>Why Stories?</h2>
-      <p>Stories capture children’s attention, spark their imagination, and make abstract concepts more relatable. 
-      By weaving learning into stories, kids retain information better, develop critical thinking, and have fun 
-      while learning!</p>
-    </section>
+header h1 {
+  margin: 0;
+}
 
-    <section id="progress">
-      <h2>Track Your Progress</h2>
-      <p>Monitor your child's learning journey with our progress tracking tools. Celebrate their milestones and see 
-      how they grow!</p>
-    </section>
+main {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+}
 
-    <section id="waiting-list">
-      <p>Be the first to know when new features are released! Sign up below:</p>
-      <p><a href="https://forms.office.com/r/4zUC7ZFYgC">Join the Waiting List</a></p>
-    </section>
-  </main>
+section {
+  margin-bottom: 20px;
+}
 
-  <footer>
-    <p>&copy; 2025 Fun with Stories. All rights reserved.</p>
-  </footer>
+h2 {
+  color: #2c3e50;
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+form label {
+  margin-bottom: 10px;
+}
+
+form input, form button {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #2980b9;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #ffcccb;
+  margin-top: 20px;
+  border-radius: 8px;
+}
