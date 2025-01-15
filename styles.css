@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -23,6 +24,8 @@ body {
   /* Full viewport height */
   text-align: center;
   /* Centers text within elements */
+  flex-wrap: wrap;
+  /* Allow multiple rows for content */
 }
 
 header {
@@ -32,6 +35,11 @@ header {
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
+  max-width: 800px;
+  /* Restricts header width */
+  margin-left: auto;
+  /* Center-aligns */
+  margin-right: auto;
 }
 
 header h1 {
@@ -45,11 +53,30 @@ main {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 800px;
+  /* Restricts main content width */
   width: 100%;
+  margin-left: auto;
+  /* Center-aligns */
+  margin-right: auto;
 }
 
 section {
+  background: rgba(255, 255, 255, 0.9);
+  /* Same background for all sections */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  max-width: 800px;
+  /* Restricts section width */
+  width: 95%;
+  margin-left: auto;
+  /* Center-aligns */
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* Align content to the top */
 }
 
 h2 {
@@ -111,4 +138,59 @@ footer {
   /* Slight transparency for footer background */
   margin-top: 20px;
   border-radius: 8px;
+  max-width: 800px;
+  /* Restricts footer width */
+  margin-left: auto;
+  /* Center-aligns */
+  margin-right: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    height: auto;
+    /* Allow height to adjust for scrolling */
+    display: block;
+    /* Change to block for stacking layout */
+  }
+
+  header,
+  main,
+  section,
+  footer {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+    /* Adjust font size for smaller screens */
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  form input,
+  form button {
+    width: 100%;
+    /* Make inputs/buttons stretch to full width */
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.2em;
+    /* Further reduce font size for very small screens */
+  }
+
+  footer {
+    font-size: 0.9em;
+    /* Reduce font size for footer text */
+  }
 }
